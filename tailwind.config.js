@@ -4,9 +4,14 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  corePlugins: {
+    appearance: true, 
+  },
+  corePlugins: {
+    textSizeAdjust: false, 
+  },
   theme: {
     extend: {},
   },
   plugins: [],
 }
-

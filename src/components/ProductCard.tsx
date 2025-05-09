@@ -14,7 +14,7 @@ const ProductCard = ({product}: IProps) => {
     <div className="grid grid-cols-1 max-w-sm md:max-w-lg mx-auto md:mx-0 border border-black p-4 my-0 rounded-2xl">
       <Image
         ImageUrl={imageURL}
-        alt="Card Image photo"
+        alt={category.name}
       />
       <h3>{title}</h3>
       <p className="my-2">
