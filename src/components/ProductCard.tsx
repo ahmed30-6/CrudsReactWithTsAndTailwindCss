@@ -5,21 +5,16 @@ import Image from "./Image";
 
 interface IProps {
   header?: string;
-  product: IProduct,
+  product: IProduct;
 }
 
-const ProductCard = ({product}: IProps) => {
-    const {title,description,imageURL,price,category} = product;
+const ProductCard = ({ product }: IProps) => {
+  const { title, description, imageURL, price, category } = product;
   return (
     <div className="grid grid-cols-1 max-w-sm md:max-w-lg mx-auto md:mx-0 border border-black p-4 my-0 rounded-2xl">
-      <Image
-        ImageUrl={imageURL}
-        alt={category.name}
-      />
+      <Image className="w-96 h-52" ImageUrl={imageURL} alt={category.name} />
       <h3>{title}</h3>
-      <p className="my-2">
-        {txtSlicer(description,100)}
-      </p>
+      <p className="my-2">{txtSlicer(description, 100)}</p>
 
       <div className="flex items-center space-x-2">
         <span className="w-5 h-5 bg-blue-600 rounded-full cursor-pointer hover:bg-blue-500 " />
@@ -37,8 +32,8 @@ const ProductCard = ({product}: IProps) => {
       </div>
 
       <Button className="bg-blue-600 hover:bg-blue-700" width="w-full">
-          edit
-        </Button>
+        edit
+      </Button>
 
       <div className="flex items-center space-x-2 my-2">
         <Button
@@ -50,7 +45,7 @@ const ProductCard = ({product}: IProps) => {
         >
           delete
         </Button>
-        
+
         <Button className="bg-green-600 hover:bg-green-700" width="w-full">
           success
         </Button>

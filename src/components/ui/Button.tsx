@@ -1,4 +1,5 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
+import '../../styles/Button.css' 
 
 interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     children: ReactNode,
@@ -8,7 +9,7 @@ interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button = ({ children, className , width , ...rest }: IProps) => {
     return (
-        <button className={`${className} ${width} py-2 rounded-md text-lime-50`} {...rest}>
+        <button className={`${className } ${width} py-2 rounded-md text-lime-50`} {...rest}>
             {children}
         </button>
     )
