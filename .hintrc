@@ -17,6 +17,7 @@
           "text-size-adjust"
         ]
       }
-    ]
+    ],
+    "no-inline-styles": "off"
   }
 }

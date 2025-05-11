@@ -188,6 +188,191 @@ export const ProductList: IProduct[] = [
   },
 ];
 
+// export const FormList: IForm[] = [
+//   {
+//     id: "title",
+//     name: "title",
+//     label: "Product Title",
+//     type: "text",
+//   },
+//   {
+//     id: "description",
+//     name: "description",
+//     label: "Product Description",
+//     type: "text",
+//   },
+//   {
+//     id: "image",
+//     name: "imageURL",
+//     label: "Product Image URL",
+//     type: "text",
+//   },
+//   {
+//     id: "price",
+//     name: "price",
+//     label: "Product Price",
+//     type: "text",
+//   },
+// ];
+
+// export const Colors: string[] = [
+//   "#FF0000", // Red
+//   "#00FF00", // Green
+//   "#0000FF", // Blue
+//   "#FFFF00", // Yellow
+//   "#FF00FF", // Magenta
+//   "#00FFFF", // Cyan
+//   "#000000", // Black
+//   "#FFA500", // Orange
+//   "#800080", // Purple
+//   "#008000", // Dark Green
+//   "#FFC0CB", // Pink
+//   "#A52A2A", // Brown
+//   "#808080", // Gray
+//   "#FFD700", // Gold
+//   "#C0C0C0", // Silver
+// ];
+
+// import { v4 as uuid } from "uuid";
+// import { IForm, IProduct } from "../interface";
+
+// export const ProductList: IProduct[] = [
+//   {
+//     id: uuid(),
+//     title: "Nike Air Force 1",
+//     description:
+//       "Classic black Nike sneakers with premium leather.",
+//     imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/nike-air-force-1-black.png",
+//     price: "120$",
+//     colors: ["#000000"],
+//     category: {
+//       name: "shoes",
+//       imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/nike-air-force-1-black.png",
+//     },
+//   },
+//   {
+//     id: uuid(),
+//     title: "Adidas Ultraboost White",
+//     description:
+//       "Comfortable white Adidas Ultraboost running shoes.",
+//     imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/adidas-ultraboost-white.png",
+//     price: "140$",
+//     colors: ["#ffffff"],
+//     category: {
+//       name: "shoes",
+//       imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/adidas-ultraboost-white.png",
+//     },
+//   },
+//   {
+//     id: uuid(),
+//     title: "Puma RS-X Red",
+//     description:
+//       "Bold red Puma RS-X with a modern design.",
+//     imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/puma-rsx-red.png",
+//     price: "100$",
+//     colors: ["#f9423a"],
+//     category: {
+//       name: "shoes",
+//       imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/puma-rsx-red.png",
+//     },
+//   },
+//   {
+//     id: uuid(),
+//     title: "Nike Air Max Gold",
+//     description:
+//       "Stylish gold Nike Air Max for standout fashion.",
+//     imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/nike-air-max-gold.png",
+//     price: "160$",
+//     colors: ["#ffd700"],
+//     category: {
+//       name: "shoes",
+//       imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/nike-air-max-gold.png",
+//     },
+//   },
+//   {
+//     id: uuid(),
+//     title: "Adidas Originals Navy",
+//     description:
+//       "Iconic Adidas sneakers in navy blue.",
+//     imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/adidas-originals-navy.png",
+//     price: "110$",
+//     colors: ["#0c1466"],
+//     category: {
+//       name: "shoes",
+//       imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/adidas-originals-navy.png",
+//     },
+//   },
+//   {
+//     id: uuid(),
+//     title: "Puma Suede Orange",
+//     description:
+//       "Classic Puma suede sneakers in vibrant orange.",
+//     imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/puma-suede-orange.png",
+//     price: "95$",
+//     colors: ["#ff6600"],
+//     category: {
+//       name: "shoes",
+//       imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/puma-suede-orange.png",
+//     },
+//   },
+//   {
+//     id: uuid(),
+//     title: "Nike Revolution Green",
+//     description:
+//       "Eco-friendly green Nike Revolution sneakers.",
+//     imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/nike-revolution-green.png",
+//     price: "90$",
+//     colors: ["#00cc00"],
+//     category: {
+//       name: "shoes",
+//       imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/nike-revolution-green.png",
+//     },
+//   },
+//   {
+//     id: uuid(),
+//     title: "Adidas ZX Bright Red",
+//     description:
+//       "Energetic bright red Adidas ZX for runners.",
+//     imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/adidas-zx-red.png",
+//     price: "130$",
+//     colors: ["#ff0000"],
+//     category: {
+//       name: "shoes",
+//       imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/adidas-zx-red.png",
+//     },
+//   },
+//   {
+//     id: uuid(),
+//     title: "Puma Future Rider Grey",
+//     description:
+//       "Sporty grey Puma Future Rider for daily wear.",
+//     imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/puma-future-rider-grey.png",
+//     price: "85$",
+//     colors: ["#a1a1a1"],
+//     category: {
+//       name: "shoes",
+//       imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/puma-future-rider-grey.png",
+//     },
+//   },
+//   {
+//     id: uuid(),
+//     title: "Nike Dunk Low Dark Grey",
+//     description:
+//       "Chic and minimal dark grey Nike Dunks.",
+//     imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/nike-dunk-low-dark-grey.png",
+//     price: "125$",
+//     colors: ["#333333"],
+//     category: {
+//       name: "shoes",
+//       imageURL: "https://raw.githubusercontent.com/abohashish/sneaker-images/main/nike-dunk-low-dark-grey.png",
+//     },
+//   },
+  
+// ];
+
+
+
+// FormList remains unchanged as per your request
 export const FormList: IForm[] = [
   {
     id: "title",
@@ -213,4 +398,24 @@ export const FormList: IForm[] = [
     label: "Product Price",
     type: "text",
   },
+];
+
+// Color options updated to match shoe colorways
+
+export const Colors: string[] = [
+  "#000000", // Black
+  "#FF00FF", // Magenta
+  "#ff0000", // Red
+  "#1e3a8a", // Adidas Navy
+  "#d1d5db", // Light Grey
+  "#00ffff", // Cyan
+  "#ff6e31", // Orange
+  "#111827", // Dark Slate
+  "#a52a2a", // Brown
+  "#808080", // Grey
+  "#c0c0c0", // Silver
+  "#00FF00", // Green
+  "#0000FF", // Blue
+  "#800080", // Purple
+  "#008000", // Dark Green
 ];

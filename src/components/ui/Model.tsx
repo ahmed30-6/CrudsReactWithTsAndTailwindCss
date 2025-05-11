@@ -44,7 +44,7 @@ export default function Model({
                   {title && (
                     <DialogTitle
                       as="h3"
-                      className="text-base/7 font-medium text-black"
+                      className="font-bold text-lg text-black"
                     >
                       {title}
                     </DialogTitle>
@@ -55,7 +55,7 @@ export default function Model({
                 </div>
               </div>
 
-              <div className="">{children}</div>
+              <div>{children}</div>
             </DialogPanel>
           </div>
         </div>

@@ -11,7 +11,7 @@ interface IProps {
 const ProductCard = ({ product }: IProps) => {
   const { title, description, imageURL, price, category } = product;
   return (
-    <div className="grid grid-cols-1 max-w-sm md:max-w-lg mx-auto md:mx-0 border border-black p-4 my-0 rounded-2xl">
+    <div className="grid grid-cols-1 max-w-sm md:max-w-lg mx-auto md:mx-0 border border-gray-400 p-4 my-0 rounded-2xl">
       <Image className="w-96 h-52" ImageUrl={imageURL} alt={category.name} />
       <h3>{title}</h3>
       <p className="my-2">{txtSlicer(description, 100)}</p>
@@ -31,13 +31,14 @@ const ProductCard = ({ product }: IProps) => {
         />
       </div>
 
+      
+
+      <div className="flex items-center space-x-1 my-2">
       <Button className="bg-blue-600 hover:bg-blue-700" width="w-full">
         edit
       </Button>
-
-      <div className="flex items-center space-x-2 my-2">
         <Button
-          className="bg-red-600   hover:bg-red-700"
+          className="bg-red-600 hover:bg-red-700"
           onClick={() => {
             alert("clicked");
           }}
@@ -46,15 +47,7 @@ const ProductCard = ({ product }: IProps) => {
           delete
         </Button>
 
-        <Button className="bg-green-600 hover:bg-green-700" width="w-full">
-          success
-        </Button>
-        <Button className="bg-sky-500 hover:bg-sky-700" width="w-full">
-          above
-        </Button>
-        <Button className="bg-slate-600 hover:bg-slate-800" width="w-full">
-          close
-        </Button>
+
       </div>
     </div>
   );

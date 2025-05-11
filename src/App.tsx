@@ -1,12 +1,13 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import ProductCard from "./components/ProductCard";
 import Model from "./components/ui/Model";
-import { FormList, ProductList } from "./data";
+import { Colors, FormList, ProductList } from "./data";
 import Button from "./components/ui/Button";
 import { IForm, IProduct } from "./interface";
 import Inputs from "./components/ui/Inputs";
 import { ProductValidation } from "./validation";
 import ErrorMsg from "./components/ErrorMsg";
+import CircleColor from "./components/CircleColor";
 
 function App() {
   const DefaultFormData = {
@@ -21,15 +22,18 @@ function App() {
     },
   };
 
-  /*------------- start state---------------- */
-  const [isOpen, setIsOpen] = useState(false);
-  const [formData, setFormData] = useState<IProduct>(DefaultFormData);
-  const [error, setError] = useState({
+  const DefaultErrorData = {
     title: "",
     description: "",
     imageURL: "",
     price: "",
-  });
+  };
+
+  /*------------- start state---------------- */
+  const [isOpen, setIsOpen] = useState(false);
+  const [formData, setFormData] = useState<IProduct>(DefaultFormData);
+  const [error, setError] = useState(DefaultErrorData);
+  const [tempColor, setTempColor] = useState<string[]>([]);
 
   // const [isTouched, setIsTouched] = useState({
   //   title: false,
@@ -46,6 +50,8 @@ function App() {
 
   const close = () => {
     setFormData(DefaultFormData);
+    setError(DefaultErrorData);
+    setTempColor([])
     setIsOpen(false);
   };
 
@@ -91,6 +97,7 @@ function App() {
 
   /*------------- end state---------------- */
 
+  /*-------------  mapping ---------------- */
   const renderProductList = ProductList.map((product: IProduct) => (
     <ProductCard key={product.id} product={product} />
   ));
@@ -111,6 +118,18 @@ function App() {
     </div>
   ));
 
+  const renderColorsComponent = Colors.map((color) => (
+    <CircleColor
+      key={color}
+      color={color}
+      onClick={() => {
+        setTempColor((prev) => [...prev, color]);
+      }}
+    />
+  ));
+
+  /*------------- End mapping ---------------- */
+
   return (
     <main className="container mx-auto">
       <section className="container-lg mx-auto">
@@ -122,8 +141,22 @@ function App() {
         >
           <form className="space-y-2" onSubmit={submitHandler}>
             {renderFormList}
-            <div className="flex items-center space-x-2">
-              <Button width="w-full" className={" submitButton"} type="submit">
+            <div className="flex items-center justify-center gap-1.5 flex-wrap">
+              {renderColorsComponent}
+            </div>
+            <div className="flex items-center justify-start gap-1 flex-wrap">
+              {tempColor.map((color)=>(
+                <span
+                  key={color}
+                  className="p-1 text-xs rounded-md text-white"
+                  style={{backgroundColor:color}}
+                >
+                  {color}
+                </span>
+              ))}
+            </div>
+            <div className="flex items-center  space-x-2">
+              <Button width="w-full" className={"submitButton"} type="submit">
                 Submit
               </Button>
             </div>
