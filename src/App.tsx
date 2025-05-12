@@ -162,7 +162,7 @@ function App() {
               ))}
             </div>
             <div className="flex items-center  space-x-2">
-              <Button width="w-full" className={"submitButton"} type="submit">
+              <Button width="w-full" className={"submitButton bg-blue-600"} type="submit">
                 Submit
               </Button>
             </div>
