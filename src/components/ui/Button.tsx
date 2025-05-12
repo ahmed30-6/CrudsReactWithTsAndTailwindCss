@@ -2,9 +2,9 @@ import { ButtonHTMLAttributes, ReactNode } from "react";
 import '../../styles/Button.css' 
 
 interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-    children: ReactNode,
-    className?: string,
-    width?:"w-full" | "w-fit"
+    children: ReactNode;
+    className?: string;
+    width?:"w-full" | "w-fit";
 }
 
 const Button = ({ children, className , width , ...rest }: IProps) => {

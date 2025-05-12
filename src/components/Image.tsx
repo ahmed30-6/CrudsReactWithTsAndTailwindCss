@@ -5,9 +5,10 @@ interface IProps {
 }
 
 const Image = ({ className , ImageUrl , alt}: IProps) => {
+    if (!ImageUrl) return null;
     return (
         <div>
-            <img className={`${className} `} src={ImageUrl}
+            <img className={`${className}`} src={ImageUrl}
                 alt={alt}
             />
         </div>
