@@ -1,5 +1,5 @@
 import { v4 as uuid } from "uuid";
-import { IForm, IProduct } from "../interface";
+import { ICategoryList, IForm, IProduct } from "../interface";
 
 // export const ProductList: IProduct[] = [
 //   {
@@ -579,3 +579,104 @@ export const Colors: string[] = [
   "#800080", // Purple
   "#008000", // Dark Green
 ];
+
+export const CategoryList:ICategoryList[] = [
+  {
+    id: uuid(),
+    name: "Running",
+    imageURL: "https://www.streetshoesaddict.com/5051/nike-air-max-270-blanc.jpg",
+  },
+  {
+    id: uuid(),
+    name: "Casual",
+    imageURL: "https://smoothitalia.com/wp-content/uploads/2019/08/puma-rs-x-bold-sneakers-white-high-rise-royal-lilac.jpg",
+  },
+  {
+    id: uuid(),
+    name: "Skate",
+    imageURL: "https://cdn.salla.sa/jqbAy/nF1gObXYtOdX3HyN52jXMY4KFXEbPgpjdBQJu6s0.png",
+  },
+  {
+    id: uuid(),
+    name: "Lifestyle",
+    imageURL: "https://cdn.shopify.com/s/files/1/2358/2817/files/new-balance-574-grey-white-20224.png?v=1698241059",
+  },
+  {
+    id: uuid(),
+    name: "Tennis",
+    imageURL: "https://www.story.capetown/cdn/shop/files/ReebokxJJJJoundClubC851.png?v=1728654818",
+  },
+  {
+    id: uuid(),
+    name: "Basketball",
+    imageURL: "https://cdn.shopify.com/s/files/1/2358/2817/products/air-jordan-1-retro-high-85-og-black-white-1.png?v=1676450597",
+  },
+  {
+    id: uuid(),
+    name: "Trail",
+    imageURL: "https://laboutiquedulac.com/cdn/shop/files/L47465700_0_GHO_SPEEDCROSS6GTXW_Moonscape_Black_BirdOfParadise.png?v=1741102956",
+  }
+];
+
+// const people = [
+//   {
+//     id: 1,
+//     name: 'Wade Cooper',
+//     avatar:
+//       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+//   },
+//   {
+//     id: 2,
+//     name: 'Arlene Mccoy',
+//     avatar:
+//       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+//   },
+//   {
+//     id: 3,
+//     name: 'Devon Webb',
+//     avatar:
+//       'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80',
+//   },
+//   {
+//     id: 4,
+//     name: 'Tom Cook',
+//     avatar:
+//       'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+//   },
+//   {
+//     id: 5,
+//     name: 'Tanya Fox',
+//     avatar:
+//       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+//   },
+//   {
+//     id: 6,
+//     name: 'Hellen Schmidt',
+//     avatar:
+//       'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+//   },
+//   {
+//     id: 7,
+//     name: 'Caroline Schultz',
+//     avatar:
+//       'https://images.unsplash.com/photo-1568409938619-12e139227838?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+//   },
+//   {
+//     id: 8,
+//     name: 'Mason Heaney',
+//     avatar:
+//       'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+//   },
+//   {
+//     id: 9,
+//     name: 'Claudie Smitham',
+//     avatar:
+//       'https://images.unsplash.com/photo-1584486520270-19eca1efcce5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+//   },
+//   {
+//     id: 10,
+//     name: 'Emil Schaefer',
+//     avatar:
+//       'https://images.unsplash.com/photo-1561505457-3bcad021f8ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+//   },
+// ]

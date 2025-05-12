@@ -1,7 +1,7 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import ProductCard from "./components/ProductCard";
 import Model from "./components/ui/Model";
-import { Colors, FormList, ProductList } from "./data";
+import { CategoryList, Colors, FormList, ProductList } from "./data";
 import Button from "./components/ui/Button";
 import { IForm, IProduct } from "./interface";
 import Inputs from "./components/ui/Inputs";
@@ -9,6 +9,8 @@ import { ProductValidation } from "./validation";
 import ErrorMsg from "./components/ErrorMsg";
 import CircleColor from "./components/CircleColor";
 import { v4 as uuid } from "uuid";
+import Select from "./components/ui/Select";
+import HeroSection from "./components/ui/HeroSection";
 function App() {
   const DefaultFormData = {
     title: "",
@@ -35,7 +37,8 @@ function App() {
   const [formDatas, setFormDatas] = useState<IProduct[]>(ProductList);
   const [error, setError] = useState(DefaultErrorData);
   const [tempColor, setTempColor] = useState<string[]>([]);
-
+  // state select Component
+  const [selectedCategory, setSelectedCategory] = useState(CategoryList[0])
   /*------------- handle---------------- */
 
   const open = () => {
@@ -82,7 +85,7 @@ function App() {
       return;
     }
     
-    setFormDatas(prev => [...prev, {...formData, id:uuid() , colors:tempColor}])
+    setFormDatas(prev => [ {...formData, id:uuid() , colors:tempColor , category:selectedCategory} , ...prev ])
     
   };
 
@@ -111,6 +114,7 @@ function App() {
     </div>
   ));
 
+  // model Circle Color
   const renderColorsComponent = Colors.map((color) => (
     <CircleColor
       key={color}
@@ -128,8 +132,11 @@ function App() {
   /*------------- End mapping ---------------- */
 
   return (
-    <main className="container mx-auto">
-      <section className="container-lg mx-auto">
+    <main className="mx-auto">
+    <section className="mx-auto w-full">
+      <HeroSection/>
+    </section>
+      <section className="">
         <Model
           isOpen={isOpen}
           close={close}
@@ -138,6 +145,8 @@ function App() {
         >
           <form className="space-y-2" onSubmit={submitHandler}>
             {renderFormList}
+            {/* Tailwind Ui */}
+            <Select selected={selectedCategory} setSelected={setSelectedCategory}/>
             <div className="flex items-center justify-center gap-1.5 flex-wrap">
               {renderColorsComponent}
             </div>
@@ -160,7 +169,7 @@ function App() {
           </form>
         </Model>
       </section>
-      <section className="m-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-2 rounded-m ">
+      <section className="m-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-2 rounded-m mx-auto container ">
         {renderProductList}
       </section>
     </main>

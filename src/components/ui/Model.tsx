@@ -2,7 +2,7 @@ import { Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 import { ReactNode } from "react";
 import Button from "./Button";
 import { X } from "lucide-react";
-
+import '../../styles/Button.css' 
 interface IProps {
   title?: string;
   isOpen: boolean;
@@ -21,8 +21,8 @@ export default function Model({
   return (
     <div className="container mx-auto">
       <div className="flex items-center justify-center ">
-        <Button className="bg-blue-600 p-2 mt-5" onClick={open}>
-          Open Model
+        <Button className="bg-blue-600 p-2 mt-5 submitButton" onClick={open}>
+          Build Product
         </Button>
       </div>
 

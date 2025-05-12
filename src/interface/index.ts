@@ -28,3 +28,9 @@ export interface IProductValidation {
   imageURL: string;
   price: string;
 }
+
+export interface ICategoryList {
+  id:string;
+  name:string;
+  imageURL:string;
+}

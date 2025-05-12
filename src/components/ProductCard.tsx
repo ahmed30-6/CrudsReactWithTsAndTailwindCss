@@ -77,7 +77,7 @@ const ProductCard = ({ product }: IProps) => {
 
   return (
     <motion.div
-      className="w-full max-w-[280px] sm:max-w-xs bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group mx-auto"
+      className="w-full max-w-[360px] sm:max-w-md bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group mx-auto"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       whileHover={{ scale: 1.02 }}
