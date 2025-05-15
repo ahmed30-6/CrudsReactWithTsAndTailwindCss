@@ -1,0 +1,1 @@
+export type IProductEditName = "title" | "description" | "imageURL" | "price" ; 

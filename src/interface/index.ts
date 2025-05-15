@@ -1,4 +1,5 @@
 import { HTMLInputTypeAttribute } from "react";
+import { IProductEditName } from "../typs";
 
 export interface IProduct {
   id?: string | undefined;
@@ -11,11 +12,12 @@ export interface IProduct {
     name: string;
     imageURL: string;
   };
+  rating?:number | undefined;
 }
 
 export interface IForm {
   id: string;
-  name: "title" | "description" | "imageURL" | "price";
+  name: IProductEditName;
   label: string;
   type?: HTMLInputTypeAttribute;
   placeholder?: string;

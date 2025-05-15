@@ -15,16 +15,10 @@ export default function Model({
   title,
   isOpen,
   close,
-  open,
   children,
 }: IProps) {
   return (
-    <div className="container mx-auto">
-      <div className="flex items-center justify-center ">
-        <Button className="bg-blue-600 p-2 mt-5 submitButton" onClick={open}>
-          Build Product
-        </Button>
-      </div>
+    
 
       <Dialog
         open={isOpen}
@@ -60,6 +54,6 @@ export default function Model({
           </div>
         </div>
       </Dialog>
-    </div>
+
   );
 }
