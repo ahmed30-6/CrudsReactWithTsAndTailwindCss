@@ -1,9 +1,15 @@
 interface IProps {
-  msg:string;
+  msg: string;
 }
 
-const ErrorMsg = ({msg}: IProps) => {
-    return msg? <span className="block text-red-700 font-semibold text-sm">{msg}</span> : null;
-}
+const ErrorMsg = ({ msg }: IProps) => {
+  if (!msg) return null;
+  
+  return (
+    <span className="block text-sm text-red-500 dark:text-red-400 mt-1">
+      {msg}
+    </span>
+  );
+};
 
 export default ErrorMsg;

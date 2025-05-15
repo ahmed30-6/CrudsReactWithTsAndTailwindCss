@@ -704,50 +704,32 @@ export interface ISliderImage {
 export const sliderImages: ISliderImage[] = [
   {
     id: 1,
-    url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop",
-    title: "Nike Air Max",
-    description: "Step into comfort with our latest collection"
+    url: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=1925&auto=format&fit=crop",
+    title: "Premium Collection 2024",
+    description: "Discover luxury and comfort in every step"
   },
   {
     id: 2,
-    url: "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?q=80&w=1000&auto=format&fit=crop",
-    title: "Running Collection",
-    description: "Designed for performance and style"
+    url: "https://images.unsplash.com/photo-1543508282-6319a3e2621f?q=80&w=1915&auto=format&fit=crop",
+    title: "Street Style Edition",
+    description: "Urban fashion meets comfort"
   },
   {
     id: 3,
-    url: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=1000&auto=format&fit=crop",
-    title: "Lifestyle Series",
-    description: "Comfort meets fashion"
+    url: "https://images.unsplash.com/photo-1556906781-9a412961c28c?q=80&w=1967&auto=format&fit=crop",
+    title: "Sport Excellence",
+    description: "Engineered for peak performance"
   },
   {
     id: 4,
-    url: "https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1000&auto=format&fit=crop",
-    title: "Urban Collection",
-    description: "Street style redefined"
+    url: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?q=80&w=1925&auto=format&fit=crop",
+    title: "Lifestyle Collection",
+    description: "Where style meets everyday comfort"
   },
   {
     id: 5,
-    url: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1000&auto=format&fit=crop",
-    title: "Sport Elite",
-    description: "Professional grade performance"
-  },
-  {
-    id: 6,
-    url: "https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=1000&auto=format&fit=crop",
-    title: "Classic Series",
-    description: "Timeless designs for every occasion"
-  },
-  {
-    id: 7,
-    url: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1000&auto=format&fit=crop",
+    url: "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?q=80&w=1779&auto=format&fit=crop",
     title: "Limited Edition",
     description: "Exclusive designs for the bold"
-  },
-  {
-    id: 8,
-    url: "https://images.unsplash.com/photo-1514989940723-e8e51635b782?q=80&w=1000&auto=format&fit=crop",
-    title: "Premium Collection",
-    description: "Luxury meets performance"
   }
 ];
